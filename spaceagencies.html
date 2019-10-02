@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Space Agencies</title>
+	<link rel="stylesheet" type="text/css" href="spaceagencies.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+<body>
+	<canvas></canvas>
+  	<script src="canvas.js" type="text/javascript"></script>
+<!--NAVBAR-->	
+	<nav class="navbar navbar-expand-md fixed-top">
+		<a href="#" class="navbar-brand">Logo</a>
+		<ul class="navbar-nav w-100 justify-content-end" style=" font-family: 'Amatic SC', cursive;height:52px; font-size: 26px; ">
+			<li class="nav-item" style="padding-right: 130px;">
+				<a class="nav-link" href="index.html"><i class="fas fa-globe-americas"></i>Home</a>
+			</li>
+			<li class="nav-item" style="padding-right: 130px;">
+				<a class="nav-link" href="#"><i class="far fa-star"></i>Cosmos</a>
+			</li>
+			<li class="nav-item" style="padding-right: 130px;">
+				<a class="nav-link" href="#"><i class="far fa-lightbulb"></i>Theories</a>
+			</li>
+			<li class="nav-item" style="padding-right: 130px;">
+				<a class="nav-link" href="#"><i class="fas fa-cloud"></i>Forum</a>
+			</li>
+			<li class="nav-item" style="padding-right: 130px;">
+				<a class="nav-link active" href="spaceagencies.html"><i class="fas fa-rocket"></i>Space Agencies</a>
+			</li>
+			<li class="nav-item" style="padding-right: 130px;">
+				<a class="nav-link" href="#"><i class="fas fa-user-astronaut"></i>Missions</a>
+			</li>
+			<li class="nav-item" style="padding-right: 130px;">
+				<a class="nav-link" href="#"><i class="fas fa-info"></i>About</a>
+			</li>
+		      <li class="nav-item" style="padding-right: 70px;">
+		        <a class="nav-link" href="#" onclick="document.getElementById('id01').style.display='block'"><i class="fas fa-sign-in-alt"></i>Login</a>
+		      </li>			
+		</ul>
+	</nav>
+	</div>
+<!--GOVT AGENCIES-->
+	<div class="container-fluid">
+		<div id="govt">
+			<h2 class="heading">Top Government Space Agencies in the world</h2>
+			<a href="roscosmos.html"><img src="RussiaLogo.png" width="150px" id="russia"></a>
+			<img src="NasaLogo.png" width="180px" id="nasa">
+			<img src="isroLogo.png" width="150px" id="isro">
+			<img src="cnsaLogo.png" width="150px" id="cnsa">
+			<img src="jaxa.png" width="150px" id="jaxa">
+			<img src="csaasc.png" width="150px" id="csaasc">
+			<a href="#ngo"><div class="circle"><i class="fas fa-angle-down"></i></div></a>
+		</div>
+		<div id="ngo">
+			<h2 class="head1">Top Private Space Agencies in the world</h2>
+			<a href="rosmocos.html"><img src="spacexLogo.png" width="200px" id="spacex"></a>
+			<img src="blueoriginLogo.png" width="180px" id="blue">
+			<img src="ScaledLogo.png" width="150px" id="scaled">
+			<img src="virginLogo.png" width="150px" id="virgin">
+			<img src="BALogo.png" width="150px" id="BA">
+			<img src="StratolaunchLogo.jpg" width="150px" id="SL">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
+	</div>
+  <div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+    <h2 class="heading">Join the discussion!</h2>
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container">
+      
+      <input type="text" placeholder="Enter Username" name="uname" required>
+      <br>
+      
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <br>  
+      <button class="btn" type="submit">Login</button>
+      <br>
+      <h3 class="signup"><a href="#">Create new account</a></h3>
+      <br>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+  <script language="javascript">
+  // Get the modal
+  var modal = document.getElementById('id01');
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+</script>
+</body>
+</html>
